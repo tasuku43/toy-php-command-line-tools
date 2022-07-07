@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php
+
+use Symfony\Component\Console\Application;
+use Tasuku43\NamespaceAppender\Console\Command\NamespaceAppendCommand;
+
+require __DIR__ . '/vendor/autoload.php';
+
+$app = new Application('Namespace appender', '0.1.0');
+
+// \Symfony\Component\Console\Command\Commandを継承する自作コマンドクラス
+$app->add(new NamespaceAppendCommand());
+
+$app->run();
