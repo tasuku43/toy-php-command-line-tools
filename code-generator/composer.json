@@ -1,0 +1,12 @@
+{
+    "require": {
+        "twig/twig": "^3.4",
+        "symfony/console": "^6.0",
+        "symfony/finder": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tasuku43\\CodeGenerator\\": "src"
+        }
+    }
+}
